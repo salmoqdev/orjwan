@@ -1,0 +1,433 @@
+:root {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'tajawal', sans-serif;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+  /* display: block; */
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+section {
+  padding: 7em 0;
+}
+
+.container {
+  width: 85%;
+  max-width: 65em;
+  margin: 0 auto;
+}
+
+.split {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1em;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: space-around;
+}
+
+/* .split > * {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
+  min-width: 15em;
+} */
+
+.spacing > * + * {
+  margin-top: var(--spacer, 2rem);
+}
+
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  color: var(--clr-text, #fff);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  padding: .5em 1.25em;
+  background: var(--clr-accent, blue);
+  border-radius: .25em;
+  outline: none;
+  -webkit-transition: opacity 250ms linear,
+ -webkit-transform 250ms ease-in-out;
+  transition: opacity 250ms linear,
+ -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out,
+ opacity 250ms linear;
+  transition: transform 250ms ease-in-out,
+ opacity 250ms linear,
+ -webkit-transform 250ms ease-in-out;
+}
+
+.btn:hover,
+.btn:focus {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+  opacity: .9;
+}
+
+.primary-title {
+  font-size: 4rem;
+  font-size: clamp(3rem, calc(5vw + 1rem), 4.5rem);
+  line-height: 1.3;
+  text-transform: uppercase;
+}
+
+.section-title {
+  text-align: center;
+  font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
+  line-height: 1;
+  color: #17353d;
+  margin-bottom: 5rem;
+}
+
+.section-title span {
+  border-bottom: 3px solid #a1173c;
+}
+
+.hero {
+  color: white;
+  text-align: center;
+  padding: 15em 0;
+  background: #222;
+}
+
+@supports (background-blend-mode: multiply) {
+  .hero {
+    background: url(../img/orjwan-Logo.png), radial-gradient(#444, #111);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.featured {
+  background: #eee;
+}
+
+.featured_img {
+  width: 5em;
+}
+
+.featured_item {
+  display: block;
+  position: relative;
+  -webkit-transform: scale(0.85);
+          transform: scale(0.85);
+  -webkit-transition: -webkit-transform 250ms ease-in-out;
+  transition: -webkit-transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out;
+  transition: transform 250ms ease-in-out, -webkit-transform 250ms ease-in-out;
+  text-decoration: none;
+  color: #333;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.featured_item:hover, .featured_item:focus {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.featured_item:hover .featured_details, .featured_item:focus .featured_details {
+  opacity: 1;
+  text-shadow: 0 0 2em white;
+}
+
+.featured_details {
+  opacity: 0;
+  -webkit-transition: opacity 250ms linear;
+  transition: opacity 250ms linear;
+}
+
+.featured_details span {
+  display: block;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+.product {
+  background: radial-gradient(var(--clr-inner, limegreen), var(--clr-outer, purple));
+  padding: 3em;
+  border-radius: 1em;
+  margin-bottom: 5em;
+  text-align: center;
+}
+
+.product_title {
+  font-size: clamp(3rem, calc(5vw + 1rem), 5.5rem);
+  text-transform: uppercase;
+  line-height: 1.2;
+  color: #fff;
+  text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
+}
+
+.our-orders {
+  background: #eee;
+  color: white;
+}
+
+.form-link {
+  text-decoration: none;
+  color: white;
+  border-bottom: 1px dashed white;
+}
+
+.order-title {
+  font-size: clamp(2rem, calc(2.5vw + 1rem), 4rem);
+  text-transform: uppercase;
+  line-height: 1.2;
+  text-shadow: 0 0 0.2em rgba(0, 0, 0, 0.2);
+}
+
+.order .btn {
+  margin-bottom: 2em;
+}
+
+input,
+textarea {
+  font-family: 'tajawal', sans-serif;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+.row {
+  direction: rtl;
+  color: #444;
+  margin: 1.5em 0;
+}
+
+.col-25,
+.col-75,
+input,
+textarea {
+  width: 100%;
+}
+
+input[type= text],
+input[type= number],
+input[type= email] {
+  width: 100%;
+  padding: .9em 1.50em;
+  margin: .3em 0;
+  border: none;
+  border-bottom: 2px solid #a1173c;
+  background-color: transparent;
+  resize: vertical;
+}
+
+textarea {
+  height: 10em;
+  padding: .9em 1.50em;
+  margin: .3em 0;
+  resize: vertical;
+}
+
+input[type= submit] {
+  background: #444;
+  cursor: pointer;
+}
+
+footer {
+  direction: rtl;
+}
+
+footer a {
+  text-decoration: none;
+  color: black;
+}
+
+.footer-logo {
+    /* margin-right: 1em; */
+    /* margin-bottom: 2.5em; */
+    width: 20%;
+    margin: 1em 0;
+}
+
+.footer-icons {
+  width: 5%;
+}
+
+.col1 span,
+.col2 span {/*add a margin to the right of the span*/
+    margin-right: 1.3em;
+    
+}
+
+.col1 div,
+.col2 div {/*add a margin of 1em to the bottom of each div element inside col1 and col2*/
+    margin-bottom: 1em;
+}
+
+.col3 a,
+.col4 a {
+    display: block;
+    margin-bottom: 1em;
+}
+
+.col2 {
+    margin-bottom: 5.5em;
+}
+
+.col3,
+.col4 {/*limited the width of col3 and col4 so only the linkable area would be just the link itself NOT the whole line*/
+    width: 30%;
+    margin-bottom: 2.5em;
+}
+
+.col-social {
+    margin: 4.8em 0 2em;
+    text-align: center;
+}
+
+.social-img {
+    background: var(--clr-white);
+    border-radius: 50%;/*because the background behind the circle is square and it's white*/
+    border: 1px solid #fff;
+    width: 1.5em;/*the original size is 128px!!!*/
+}
+
+.attribution { 
+    font-size: 1rem;
+    text-align: center;
+    margin: 2em 0 -2em;
+}
+
+.attribution a { 
+    color: #111;
+    border-bottom: 1px dashed #111;
+}
+
+@media (min-width: 45em) {
+  .product {
+    text-align: left;
+    margin-bottom: 9em;
+  }
+
+  .product.order { /*class product and class order are  in the same html element*/
+    text-align: center;
+    padding: 3em 0;
+  }
+
+  .product_title {
+    margin: 0;
+  }
+
+  .product_image {
+    float: right;
+    width: 50%;
+    shape-outside: url(../img/shoe-1.png);
+    shape-margin: 1em;
+    /* margin: 0 -5em 0 0; */
+  }
+
+  .product.turn-left .product_image { /*class product and class turn-left are in the same html element while product_image is a child*/
+    float: left;
+    width: 50%;
+    shape-outside: url(../img/shoe-2.png);
+    /* margin: 0 0 0 -5em; */
+    shape-margin: 2em;
+  }
+
+  .product_image1 {
+    float: left;
+    width: 20%;
+  }
+
+  .container form {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  .footer {
+    padding: 3em 0;
+  }
+
+  .footer-logo {
+    width: 10%;
+  }
+
+  .footer-icons {
+    width: 10%;
+  }
+
+  .split-footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .col1 {
+    width: 35%;
+  }
+
+  .col2 {
+    width: 20%;
+    margin-bottom: 0;
+  }
+
+  .col3 {
+    width: 10%;
+    margin-bottom: 0;
+  }
+
+  .col4 {
+    width: 10%;
+  }
+
+  .col-social {
+    width: 10%;
+    margin: 0;/*previously on mobile screen it was margin: 4.8em 0 2em;*/
+  }
+}
+
+.hero {
+  --clr-accent: #faa700;
+}
+
+.thermal-theme {
+  --clr-inner: #faa700;
+  --clr-outer: #e48d00;
+  --clr-accent: #a1173c;
+}
+
+.beige-theme {
+  --clr-inner: #fce4b3;
+  --clr-outer: #eac886;
+  --clr-accent: #2f4858;
+}
+
+.cool-theme {
+  --clr-inner: #6dd5ed;
+  --clr-outer: #2193b0;
+  --clr-accent: #008951;
+}
+
+.black-silver-theme {
+  --clr-inner: #444;
+  --clr-outer: #111;
+  --clr-accent: #e48d00;
+}
