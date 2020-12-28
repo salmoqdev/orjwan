@@ -8,10 +8,37 @@
   <title>شركة أرجوان الخليج الحديثة للمقاولات</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;500;700&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="css/w3.css" />
   <link rel="stylesheet" href="css/main.css" />
 </head>
 
 <body>
+
+  <nav>
+    <div class="w3-bar w3-black w3-opacity-min w3-text-white w3-large">
+      <a href="javascript: void(0)" class="w3-bar-item w3-button w3-right w3-large w3-hide-large w3-animate-zoom"
+        onclick="myFunction()">&#9776;</a>
+      <a href="#" class="w3-bar-item w3-button w3-mobile w3-left w3-hide-small w3-hide-medium w3-large">logo</a>
+      <a href="#" class="w3-bar-item w3-button w3-mobile w3-right w3-hide-small w3-hide-medium">الرئيسية</a>
+      <a href="#" class="w3-bar-item w3-button w3-mobile w3-right w3-hide-small w3-hide-medium">من نحن</a>
+      <a href="#products" class="w3-bar-item w3-button w3-mobile w3-right w3-hide-small w3-hide-medium">خدماتنا</a>
+      <a href="#info-form" class="w3-bar-item w3-button w3-mobile w3-right w3-hide-small w3-hide-medium">تواصل معنا</a>
+      <a href="#order-now"
+        class="w3-bar-item w3-button w3-mobile w3-right w3-hide-small w3-hide-medium">اطلب خدمة</a>
+    </div>
+
+    <div id="collapsed-menu" class="w3-bar-block w3-black w3-opacity-min w3-text-white w3-hide w3-hide-large">
+      
+      <a href="#" class="w3-bar-item w3-button w3-xlarge" style="cursor: default">logo</a>
+      <a href="#" class="w3-bar-item w3-button" onclick="myFunction()">الرئيسية</a>
+      <a href="#" class="w3-bar-item w3-button" onclick="myFunction()">من نحن</a>
+      <a href="#products" class="w3-bar-item w3-button" onclick="myFunction()">خدماتنا</a>
+      <a href="#info-form" class="w3-bar-item w3-button" onclick="myFunction()">تواصل معنا</a>
+      <a href="#order-now" class="w3-bar-item w3-button" onclick="myFunction()">اطلب خدمة</a>
+    </div>
+  </nav>
+
 
   <header class="hero" id="home">
     <div class="container spacing">
@@ -51,32 +78,55 @@
         <article class="product cool-theme spacing">
           <img src="img/air-cond.png" alt="" class="product_image">
           <h3 class="product_title">تركيب أنظمة التبريد والتكييف</h3>
-          <p class="product_description">تركيب أنظمة التبريد والتكييف وصيانتها وإصلاحها لجميع المنشآت السكنية والتجارية + عقود صيانة سنوية</p>
+          <p class="product_description">تركيب أنظمة التبريد والتكييف وصيانتها وإصلاحها لجميع المباني السكنية والتجارية + عقود صيانة سنوية</p>
           <a href="#order-now" class="btn">اطلب الآن</a>
         </article>
 
         <article class="product beige-theme turn-left spacing">
           <img src="img/cctv.png" alt="" class="product_image">
           <h3 class="product_title">تركيب كاميرات المراقبة</h3>
-          <p class="product_description">تركيب كاميرات المراقبة وشبكات الكمبيوتر والإتصالات وصيانتها وتمديد الأسلاك الكهربائية + عقود صيانة سنوية</p>
+          <p class="product_description">تركيب كاميرات المراقبة وصيانتها + عقود صيانة سنوية</p>
           <a href="#order-now" class="btn">اطلب الآن</a>
         </article>
 
         <article class="product thermal-theme spacing">
           <img src="img/gas_tank.png" alt="" class="product_image">
           <h3 class="product_title">تركيب الغاز المركزي</h3>
-          <p class="product_description">تركيب وتمديد أنظمة الغاز المركزي لجميع المنشآت التجارية والسكنية + عقود صيانة سنوية</p>
+          <p class="product_description">تركيب وتمديد أنظمة الغاز المركزي لجميع المباني التجارية والسكنية + عقود صيانة سنوية</p>
           <a href="#order-now" class="btn">اطلب الآن</a>
         </article>
 
         <article class="product cool-theme spacing">
-          <img src="img/solar.png" alt="" class="product_image">
-          <h2>قريباً</h2>
-          <h3 class="product_title">تركيب وصيانة ألواح الطاقة الشمسية</h3>
-          <p class="product_description">تركيب وتمديد ألواح الطاقة الشمسية وصيانتها لجميع المرافق التجارية والسكنية + عقود صيانة سنوية
-          </p>
-          <!-- <a href="" class="btn">اطلب الآن</a> -->
+          <img src="img/fire pipes.jpg" alt="" class="product_image">
+          <h3 class="product_title">تمديدات أنابيب الحريق وصيانتها</h3>
+          <p class="product_description">تركيب المصاعد وصيانتها وإصلاحها لجميع المباني السكنية والتجارية + عقود
+            صيانة سنوية</p>
+          <a href="#order-now" class="btn">اطلب الآن</a>
         </article>
+        
+        <article class="product beige-theme turn-left spacing">
+          <img src="img/network.png" alt="" class="product_image">
+          <h3 class="product_title">تركيب شبكات الكمبيوتر</h3>
+          <p class="product_description">تركيب شبكات الكمبيوتر والإتصالات وصيانتها +
+            عقود صيانة سنوية</p>
+          <a href="#order-now" class="btn">اطلب الآن</a>
+        </article>
+        
+        <article class="product thermal-theme spacing">
+          <img src="img/electric cables.png" alt="" class="product_image">
+          <h3 class="product_title">تمديد الأسلاك الكهربائية</h3>
+          <p class="product_description">تمديد الأسلاك الكهربائية لجميع المباني التجارية والسكنية + عقود صيانة سنوية</p>
+          <a href="#order-now" class="btn">اطلب الآن</a>
+        </article>
+
+        <article class="product beige-theme turn-left spacing">
+          <img src="img/elevators.jpg" alt="" class="product_image">
+          <h3 class="product_title">تركيب المصاعد</h3>
+          <p class="product_description">تركيب المصاعد وصيانتها لجميع المباني السكنية والتجارية +
+            عقود صيانة سنوية</p>
+          <a href="#order-now" class="btn">اطلب الآن</a>
+        </article>
+
       </div>
     </section>
 
@@ -91,19 +141,17 @@
           <p class="order-desc">يمكنك الآن طلب الخدمة التي تريدها بالضغط على الزر بالأسفل لكي نتواصل معك مباشرة عن طريق
             تطبيق الواتس آب
           </p>
-          <a href="https://wa.me/966505611086" class="btn">اطلب الآن</a>
+          <a href="https://wa.me/966508335369" class="btn">اطلب الآن</a>
         </article>
 
-        <article class="product order black-silver-theme spacing">
+        <!-- <article class="product order black-silver-theme spacing">
           <h3 class="order-title">للإستفسارات والإقتراحات</h3>
           <p class="order-desc">للإستفسارات الأخرى والإقتراحات يمكنك <a href="#info-form" class="form-link">تعبئة النموذج التالي</a>
             وسنحاول الرد في أقرب وقت ممكن بإذن الله
           </p>
-          
-          <!-- <a href="" class="btn"></a> -->
-        </article>
+        </article> -->
 `
-        <form action="" id="info-form">
+        <!-- <form action="" id="info-form">
           <div class="row">
             <div class="col-25">
               <label for="name">الإسم</label>
@@ -145,7 +193,7 @@
             <input type="submit" value="إرسال" class="btn">
           </div>
 
-        </form>
+        </form> -->
       </div>
     </section>
   </main>
@@ -184,7 +232,7 @@
         </div>
   
         <div class="col3">
-          <a href="#home">من نحن</a>
+          <a href="">من نحن</a>
           <a href="#info-form">تواصل معنا</a>
           <a>Press</a>
           <a>Blog</a>
@@ -200,7 +248,7 @@
           <a href="" target="_blank" class="social-links">
             <img src="img/iconfinder_Circled_Facebook_svg_5279111.svg" alt="facebook" class="social-img">
           </a>
-          <a href="https://twitter.com/OAlkhaleej/" target="_blank" class="social-links">
+          <a href="https://twitter.com/salmoq/" target="_blank" class="social-links">
             <img src="img/iconfinder_Circled_Twitter_svg_5279123.svg" alt="twitter" class="social-img">
           </a>
           <a href="" target="_blank" class="social-links">
@@ -211,12 +259,25 @@
 
       <div>
         <p class="attribution">
-          By <a href="https://wa.me/966508335369" target="_blank">Salahuddin Mohammed</a>
+          By <a href="https://twitter.com/salmoq/" target="_blank">Salahuddin Mohammed</a>
         </p>
       </div>
 
     </div>
   </footer>
+
+  <script>
+    /* function for hamburger menu */
+      function myFunction() {
+        var x = document.getElementById("collapsed-menu");
+        if (x.className.indexOf("w3-show") == -1) {
+          x.className += " w3-show";
+        }
+        else {
+          x.className = x.className.replace(" w3-show", "");
+        }
+      }
+  </script>
 
 </body>
 
